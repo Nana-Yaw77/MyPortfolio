@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow: hidden; /
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button button {
+    background-color: #333;
+    color: #f4f4f9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.back-button button:hover {
+    background-color: #555;
+}
+
+.back-button button:active {
+    background-color: #222;
+}
+
+
+
+.projects {
+    background-image: url('diary.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.projects ul li {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    min-width: 120px;
+}
+
+.projects ul li:hover {
+    color: #f4f4f9;
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(4, 4, 4, 0.2);
+    cursor: pointer;
+    background-image: url('top.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects ul li a {
+    text-decoration: none;
+    color: #545252;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.projects ul li:hover a {
+    color: rgb(4, 4, 4) ;
+}
+
+@media (max-width: 1023px) {
+    body {
+        overflow: auto; 
+    }
+}
+
+
